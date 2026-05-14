@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="shortcut icon" href="faviconemoji.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir esse site em várias dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)"srcset="imagens/foto-p.png" type="image/png">
+     <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+
+    <p>Devemos inserir imagens em tamahos dferentes para que quando aberta em dispositivos diferentes (celular, computador, tablet, tvs, etc.., as imagens se ajustem ao tmano da tela de cada dispositivo, e o usuario final não tenha que ficar utilizando a barra de rolagem para conseguir visualizar a imagem toda, pois isso faz com que os usuarios não utilizeo o seu site</p>
+
+    <p>Para colocar as imagens em varios tamanos, devemosutilizar a tad 'picture, e dentro desta tag, inserir sources na sequencia de tamanho que as imagens seram utilizada conforme a imagem abaixo do códico.
+        para ajustar a imagem grande em que não seja necessario aparecer a barra de rolagem, sempre acrescentar 0,50 px no valor dentro de max-width que este é o valir de espaço da barra de rolagem.
+        <p><img src="cod. imagens.png" alt=""></p>
+    </p>
+   
+    <picture>
+        <source media="(max-width: 750px)"srcset="imagens/family-p.png" type="image/png">
+     <source media="(max-width: 1050px)" srcset="imagens/family-m.png" type="image/png">
+    <img src="imagens/family-g.png" alt="imagem flexivel">
+    </picture>
+</body>
+</html>

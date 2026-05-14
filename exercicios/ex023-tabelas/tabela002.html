@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {    
+            width: 500px;
+             border-collapse: collapse;
+             position: relative;     
+        }
+
+         td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+            
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+       
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr:nth-child(even) {   /* intercala a cor da tabela (even = intercalar pares*/
+            background-color: lightcoral;
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgreen; /* intercala a cor da tabela (odd = intercalar impares*/
+        }
+     
+        td.num {
+            text-align: right;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Usando Tabelas Grandes</h1>
+    <!--
+    ANATOMINA PARA TABELAS GRANDES
+    TABLE
+      THEAD
+        TR, TD, TH
+       TBODY
+        TR, TD, TH
+        TFOOT
+        TR, TD, TH
+    -->
+
+    <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
+        <thead> <!--Cabeçalho da tabela-->
+            <tr> <!--linha da tabela (só uma linha)-->
+                <th scope="col" style="width: 40px;">Posição</th>
+                <th scope="col" style="width: 70px;">Estado</th> <!--th= conteudo do cabeçalho-->
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>   
+        </thead>
+
+        <tbody> <!--Corpo da tabela-->
+            <tr><!--linha da tabela-->
+                <td>01</td>
+                <td>São Paulo</td><!--td= dado da linha-->
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Minas Gerais</td><!--td= dado da linha-->
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Rio de Janeiro</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>03</td>
+                <td>Bahia</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>04</td>
+                <td>Paraná</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>05</td>
+                <td>Rio Grande do Sul</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+
+                <tr>
+                <td>06</td>
+                <td>Pernambuco</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+            
+            <tr>
+                <td>07</td>
+                <td>Ceará</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>08</td>
+                <td>Pará</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>09</td>
+                <td>Santa Catarina</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td>Maranhão</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Goias</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Amazonas</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Espirito Santo</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Paraíba</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+             <tr>
+                <td>15</td>
+                <td>Rio Grande do Norte</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+             <tr>
+                <td>16</td>
+                <td>Mato Grosso</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+             <tr>
+                <td>17</td>
+                <td>Alagoas</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+             <tr>
+                <td>18</td>
+                <td>Piauí</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+             <tr>
+                <td>19</td>
+                <td>Distrito Federal</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+             <tr>
+                <td>20</td>
+                <td>Mato Grosso do Sul</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+             <tr>
+                <td>21</td>
+                <td>Sergipe</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+             <tr>
+                <td>22</td>
+                <td>Rondonia</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+             <tr>
+                <td>23</td>
+                <td>Tocantins</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+             <tr>
+                <td>24</td>
+                <td>Acre</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+             <tr>
+                <td>25</td>
+                <td>Amapá</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+             <tr>
+                <td>26</td>
+                <td>Roraima</td><!--td= dado da linha-->
+                <td class="num">17.264.943</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot> <!--Rodapé da tabela-->
+             <tr>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num"><strong>210.147.125</strong></td>
+        </tr>
+
+        </tfoot>
+    
+
+    </table>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda itaque facilis deserunt, nostrum ad aliquam possimus molestiae blanditiis porro error quam, iure beatae ullam harum modi est praesentium quasi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati esse voluptas, architecto nulla mollitia earum laudantium hic deleniti voluptate pariatur modi nobis doloribus, nostrum totam in? Delectus repudiandae nisi quae.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil ex deserunt maiores nesciunt? Quia sequi, nesciunt recusandae placeat sunt nihil minima consequuntur fugiat corporis illum pariatur voluptatum veritatis quibusdam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam molestias, sequi maiores et doloremque, exercitationem commodi in quas pariatur nam odio provident obcaecati placeat! Voluptates iusto vel libero alias.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sed sunt labore obcaecati eum consequatur, impedit delectus incidunt. Sapiente delectus, fuga in placeat magni fugit. Aliquid neque eius nisi est. </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda itaque facilis deserunt, nostrum ad aliquam possimus molestiae blanditiis porro error quam, iure beatae ullam harum modi est praesentium quasi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati esse voluptas, architecto nulla mollitia earum laudantium hic deleniti voluptate pariatur modi nobis doloribus, nostrum totam in? Delectus repudiandae nisi quae.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil ex deserunt maiores nesciunt? Quia sequi, nesciunt recusandae placeat sunt nihil minima consequuntur fugiat corporis illum pariatur voluptatum veritatis quibusdam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam molestias, sequi maiores et doloremque, exercitationem commodi in quas pariatur nam odio provident obcaecati placeat! Voluptates iusto vel libero alias.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sed sunt labore obcaecati eum consequatur, impedit delectus incidunt. Sapiente delectus, fuga in placeat magni fugit. Aliquid neque eius nisi est. </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda itaque facilis deserunt, nostrum ad aliquam possimus molestiae blanditiis porro error quam, iure beatae ullam harum modi est praesentium quasi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati esse voluptas, architecto nulla mollitia earum laudantium hic deleniti voluptate pariatur modi nobis doloribus, nostrum totam in? Delectus repudiandae nisi quae.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil ex deserunt maiores nesciunt? Quia sequi, nesciunt recusandae placeat sunt nihil minima consequuntur fugiat corporis illum pariatur voluptatum veritatis quibusdam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam molestias, sequi maiores et doloremque, exercitationem commodi in quas pariatur nam odio provident obcaecati placeat! Voluptates iusto vel libero alias.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sed sunt labore obcaecati eum consequatur, impedit delectus incidunt. Sapiente delectus, fuga in placeat magni fugit. Aliquid neque eius nisi est. </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda itaque facilis deserunt, nostrum ad aliquam possimus molestiae blanditiis porro error quam, iure beatae ullam harum modi est praesentium quasi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati esse voluptas, architecto nulla mollitia earum laudantium hic deleniti voluptate pariatur modi nobis doloribus, nostrum totam in? Delectus repudiandae nisi quae.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil ex deserunt maiores nesciunt? Quia sequi, nesciunt recusandae placeat sunt nihil minima consequuntur fugiat corporis illum pariatur voluptatum veritatis quibusdam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam molestias, sequi maiores et doloremque, exercitationem commodi in quas pariatur nam odio provident obcaecati placeat! Voluptates iusto vel libero alias.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sed sunt labore obcaecati eum consequatur, impedit delectus incidunt. Sapiente delectus, fuga in placeat magni fugit. Aliquid neque eius nisi est. </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda itaque facilis deserunt, nostrum ad aliquam possimus molestiae blanditiis porro error quam, iure beatae ullam harum modi est praesentium quasi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati esse voluptas, architecto nulla mollitia earum laudantium hic deleniti voluptate pariatur modi nobis doloribus, nostrum totam in? Delectus repudiandae nisi quae.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil ex deserunt maiores nesciunt? Quia sequi, nesciunt recusandae placeat sunt nihil minima consequuntur fugiat corporis illum pariatur voluptatum veritatis quibusdam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam molestias, sequi maiores et doloremque, exercitationem commodi in quas pariatur nam odio provident obcaecati placeat! Voluptates iusto vel libero alias.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sed sunt labore obcaecati eum consequatur, impedit delectus incidunt. Sapiente delectus, fuga in placeat magni fugit. Aliquid neque eius nisi est. </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda itaque facilis deserunt, nostrum ad aliquam possimus molestiae blanditiis porro error quam, iure beatae ullam harum modi est praesentium quasi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati esse voluptas, architecto nulla mollitia earum laudantium hic deleniti voluptate pariatur modi nobis doloribus, nostrum totam in? Delectus repudiandae nisi quae.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil ex deserunt maiores nesciunt? Quia sequi, nesciunt recusandae placeat sunt nihil minima consequuntur fugiat corporis illum pariatur voluptatum veritatis quibusdam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam molestias, sequi maiores et doloremque, exercitationem commodi in quas pariatur nam odio provident obcaecati placeat! Voluptates iusto vel libero alias.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sed sunt labore obcaecati eum consequatur, impedit delectus incidunt. Sapiente delectus, fuga in placeat magni fugit. Aliquid neque eius nisi est. </p>
+    
+</body>
+</html>

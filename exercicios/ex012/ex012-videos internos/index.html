@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/faviconemoji.ico" type="image/x-icon">
+    <title>Videos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Videos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor</p>
+    <p>abaixo arquivo mp4</p>
+    <video src="midia/meu-video2.mp4.mp4" width="500" controls></video>
+
+    <p>Para que os videos abram com compabilidade dentro de todos os navegadores, crias a TAG video e dentro da tag video criar varios sourcers e colocar por sequencia todos os formatos de videos conforme abaixo</p>
+    <video width="500" poster="imagens/capa.jpg" controls autoplay loop>
+        <source src="midia/meu-video2.mp4.mp4" type="video/mp4">
+        <source src="midia/meu-video2.m4v.m4v" type="video/m4v">
+        <source src="midia/meu-video2.ogg.ogv" type="video/ogv">
+        <source src="midia/meu-video2.webm.webm" type="video/webm">
+    </video>
+    <p>Seu navegador não tem compabilidade com reprodução deste video. <a href="midia/meu-video2.mp4.rar">Cique aqui</a> para fazer o dowload</p>
+
+    <p>Este é o código deste projeto</p>
+    <img src="imagens/código.png" alt="código/video" width="800">
+
+     <h1>Colocar videos externos</h1>
+    <p>Inserindo videos do YOUTUBE</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qjIOA8oRom8?si=coSTOE0AfIhQwMB2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</body>
+</html>
